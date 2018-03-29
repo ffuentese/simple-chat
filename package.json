@@ -20,4 +20,7 @@
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
   }
+  "dependencies: {
+    "socket.io": "^1.7.3" 
+  }
 }

@@ -12,6 +12,9 @@
     "realtime",
     "websocket"
   ],
+    "dependencies: {
+    "socket.io": "^1.7.3" 
+  }
   "scripts": {
      "start": "node chat.js"
   },
@@ -20,7 +23,5 @@
   "env": {
     "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
   }
-  "dependencies: {
-    "socket.io": "^1.7.3" 
-  }
+
 }

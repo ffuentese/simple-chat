@@ -8,10 +8,11 @@ fs.readFile(‘./chat.html’, function (err, data) {
  }
  index = data;
 });
+var port = process.env.PORT || 3000;
 var server = http.createServer(function(request, response) {
   response.writeHeader(200, {“Content-Type”: “text/html”});
   response.write(index);
   response.end();
-}).listen(1223);
+}).listen(port);
 
 var socket = io.listen(server);

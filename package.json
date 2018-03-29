@@ -5,6 +5,9 @@
   "repository": "https://github.com/ffuentes/simple-chat",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "success_url": "/",
+  "dependencies: {
+    "socket.io": "^1.7.3" 
+  },
   "keywords": [
     "node",
     "express",
@@ -12,9 +15,6 @@
     "realtime",
     "websocket"
   ],
-    "dependencies: {
-    "socket.io": "^1.7.3" 
-  },
   "scripts": {
      "start": "node chat.js"
   },

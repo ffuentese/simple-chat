@@ -1,6 +1,7 @@
 var io = require("socket.io");
 var port = process.env.PORT || 3000;
-var socket = io.listen(port);
+var socket = io.listen(port, "0.0.0.0");
+
 
 socket.set("log level", 1);
 var people = {};

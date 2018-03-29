@@ -13,3 +13,5 @@ var server = http.createServer(function(request, response) {
   response.write(index);
   response.end();
 }).listen(process.env.PORT || 3000);
+
+var socket = io.listen(server);

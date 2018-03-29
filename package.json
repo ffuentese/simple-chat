@@ -6,6 +6,8 @@
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "success_url": "/",
   "dependencies": {
+    "express": "~2.5.8",
+    "ejs": "~0.7.1",
     "socket.io": "^1.7.3" 
   },
   "keywords": [

@@ -2,7 +2,7 @@ var http = require(‘http’),
 fs = require(‘fs’),
 io = require(‘socket.io’),
 index;
-fs.readFile(‘./chat.html’, function (err, data) {
+fs.readFile(__dirname + ‘chat.html’, function (err, data) {
  if (err) {
     throw err;
  }

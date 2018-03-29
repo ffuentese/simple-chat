@@ -1,0 +1,22 @@
+{
+  "name": "Socket-Chat-Example",
+  "description": "socketio chat by tamas piros",
+  "website": "http://www.tamas.io/2013/05/19/simple-chat-application-using-node-js-and-socket-io/",
+  "repository": "https://github.com/ffuentes/simple-chat",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "socket.io",
+    "realtime",
+    "websocket"
+  ],
+  "scripts": {
+  },
+  "addons": [
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
+  }
+}

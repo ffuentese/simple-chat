@@ -1,7 +1,6 @@
 var http = require(‘http’),
 fs = require(‘fs’),
-server = require('http').createServer(app),
-io = require('socket.io').listen(server),
+io = require(‘socket.io’),
 index;
 fs.readFile(‘./chat.html’, function (err, data) {
  if (err) {
@@ -9,4 +8,8 @@ fs.readFile(‘./chat.html’, function (err, data) {
  }
  index = data;
 });
-server.listen(process.env.PORT || 3000);
+var server = http.createServer(function(request, response) {
+  response.writeHeader(200, {“Content-Type”: “text/html”});
+  response.write(index);
+  response.end();
+}).listen(process.env.PORT || 3000);
